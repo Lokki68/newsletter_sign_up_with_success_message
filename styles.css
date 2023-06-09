@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;600;800&family=Roboto:wght@400;700&display=swap');
+
+/* Set variables */
+
+:root {
+  --primary: hsl(4, 100%, 67%);
+  --primary-background: hsla(4, 100%, 67%, 0.3);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charocoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  --active-shadow: 2px 4px 35px .2px var(--primary);
+
+  --mobile-breakpoint: 375px;
+  --desktop-breakpoint: 1440px;
+}
+
+/* Reset css */
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family : Roboto, sans-serif;
+  background-color: var(--dark-slate-grey);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Start Css */
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+
+img.mobile_illustration {
+  width: 100%;
+}
+
+img.desktop_illustration {
+  display: none;
+}
+
+.presentation_content {
+  color: var(--dark-slate-grey);
+  padding: 15px;
+  font-size: 16px;
+}
+
+.presentation_content h2 {
+  font-size: 2.5em;
+  margin: 25px 0;
+}
+
+.presentation_content p {
+  margin: 20px 0;
+  line-height: 1.5em;
+}
+
+.list_container {
+  display: flex;
+  margin: 15px 0;
+}
+
+.list_img {
+  color: var(--primary);
+  font-size: 1.2em;
+  margin-right: 1.5em;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.label_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.label_content .error_message {
+  color: var(--primary)
+}
+
+.input_content {
+  width: 100%;
+}
+
+.input_content input {
+  border: 1px solid var(--grey);
+  padding: 20px 15px;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.input_content input.error_state {
+  background-color: var(--primary-background);
+  color: var(--primary);
+  border: 2px solid var(--primary)
+}
+
+.input_content input:focus {
+  outline: 1px solid var(--dark-slate-grey);
+}
+
+.form_group button {
+  width: 100%;
+  margin: 15px 0;
+  padding:  20px 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--charocoal-grey);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.form_group button:hover {
+  background-color: var(--primary);
+  box-shadow:  var(--active-shadow);
+}
+
+
+.success_container {
+  display: none;
+}
+
+
+
+/* Base css frontend mentor */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white)
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

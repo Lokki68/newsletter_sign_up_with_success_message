@@ -1,52 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/images/favicon-32x32.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
+
 <body>
 
-  <!-- Sign-up form start -->
+  <div class="main_container">
+    <div class="form_container">
+      <div class="img_container">
+        <img
+          src="/assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration mobile"
+          class="mobile_illustration"
+        >
+        <img
+          src="/assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration desktop"
+          class="desktop_illustration"
+        >
+      </div>
+      <form class="form_content">
+        <div class="presentation_content">
+          <h2>Stay updated!</h2>
 
-  Stay updated!
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
+          <ul>
+            <li class="list_container">
+              <div class="list_img">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="list_item">
+                Product discovery and building what matters
+              </div>
+            </li>
+            <li class="list_container">
+              <div class="list_img">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="list_item">
+                Measuring to ensure updates are a success
+              </div>
+            </li>
+            <li class="list_container">
+              <div class="list_img">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="list_item">
+                And much more!
+              </div>
+            </li>
+          </ul>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
+        </div>
+        <div class="form_group">
+          <div class="label_content">
+            <label for="email_address">Email address</label>
+            <p class="error_message">test error</p>
+          </div>
+          <div class="input_content">
+            <input
+              class="email_input"
+              type="text"
+              placeholder="email@company.com"
+              name="email_address"
+              id="email_address"
+            >
+          </div>
+          <button
+            type="submit"
+            class="submit_button"
+          >Subscribe to monthly newsletter</button>
+        </div>
+      </form>
+    </div>
+    <div class="success_container">
+      <div class="success_img">
+        <i class="fa-solid fa-circle-check fa-xl"></i>
+      </div>
+      <div class="success_content">
+        <h2>
+          Thanks for subscribing!
+        </h2>
+        <p>
+          A confirmation email has been sent to ash@loremcompany.com.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <div class="success_action">
+        <button class="dismiss_button">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Success message start -->
 
-  Thanks for subscribing!
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
 
   <!-- Success message end -->
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank"
+    >Frontend Mentor</a>.
+    Coded by <a
+      href="https://github.com/Lokki68/newsletter_sign_up_with_success_message/blob/main/design/mobile-success.jpg"
+      target="_blank"
+    >Lokki</a>.
   </div>
 </body>
+
 </html>
